@@ -7,8 +7,8 @@ export const siteConfig = {
   email: "samansunasara.39@gmail.com",
   whatsapp: "+917359224131",
   whatsappDisplay: "+91 7359224131",
-  linkedin: "https://www.linkedin.com/in/saman-sunasara-59072228b/",
-  instagram: "https://www.instagram.com/_sxmann._/",
+  linkedin: "https://www.linkedin.com/company/grevoo/",
+  instagram: "https://www.instagram.com/grevoo.in/",
   parentCompany: "Grevoo",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ssmarketingagency.com"
 };
