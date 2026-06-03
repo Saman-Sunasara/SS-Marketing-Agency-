@@ -15,11 +15,11 @@ export default function PricingPage() {
         <div className="mt-10 grid gap-4 lg:grid-cols-4">
           {pricing.map((plan) => (
             <div key={plan.name} className="glass rounded-[2rem] p-6">
-              <div className="text-lg font-semibold text-white">{plan.name}</div>
+              <div className="text-lg font-semibold text-slate-950">{plan.name}</div>
               <div className="mt-3 font-display text-4xl text-[var(--gold)]">{plan.price}</div>
               <div className="mt-5 space-y-3">
                 {plan.features.map((feature) => (
-                  <div key={feature} className="text-sm text-white/72">
+                  <div key={feature} className="text-sm text-slate-600">
                     {feature}
                   </div>
                 ))}
@@ -28,7 +28,7 @@ export default function PricingPage() {
           ))}
         </div>
         <div className="mt-10 flex justify-center">
-          <Link href="/contact" className="rounded-full bg-[var(--gold)] px-6 py-4 font-medium text-black">
+          <Link href="/contact" className="rounded-full bg-[var(--gold)] px-6 py-4 font-medium text-white">
             Book a Free Strategy Call
           </Link>
         </div>

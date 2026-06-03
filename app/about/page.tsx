@@ -14,13 +14,13 @@ export default function AboutPage() {
         <div className="mt-10 grid gap-4 lg:grid-cols-2">
           <div className="glass rounded-[2rem] p-6">
             <div className="text-xs uppercase tracking-[0.32em] text-[var(--gold)]">Mission</div>
-            <p className="mt-4 text-base leading-8 text-white/72">
+            <p className="mt-4 text-base leading-8 text-slate-600">
               Help businesses scale faster using modern marketing systems, automation and performance-driven campaigns.
             </p>
           </div>
           <div className="glass rounded-[2rem] p-6">
             <div className="text-xs uppercase tracking-[0.32em] text-[var(--gold)]">Founder</div>
-            <p className="mt-4 text-base leading-8 text-white/72">
+            <p className="mt-4 text-base leading-8 text-slate-600">
               {siteConfig.founder} leads the agency with a focus on clarity, accountability and measurable growth.
             </p>
           </div>

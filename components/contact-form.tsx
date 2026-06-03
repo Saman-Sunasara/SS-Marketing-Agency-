@@ -65,14 +65,14 @@ export function ContactForm() {
         ["budget", "Monthly Marketing Budget"],
         ["goals", "Goals"]
       ].map(([field, label]) => (
-        <label key={field} className="grid gap-2 text-sm text-white/72">
+        <label key={field} className="grid gap-2 text-sm text-slate-600">
           <span>{label}</span>
           {field === "goals" ? (
             <textarea
               value={formData[field as keyof FormDataState]}
               onChange={(e) => updateField(field as keyof FormDataState, e.target.value)}
               rows={4}
-              className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-white/30 focus:border-[var(--gold)]/70"
+              className="rounded-2xl border border-slate-900/10 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[var(--gold)]/70"
               placeholder="Tell us what success looks like"
             />
           ) : (
@@ -80,7 +80,7 @@ export function ContactForm() {
               type={field === "email" ? "email" : "text"}
               value={formData[field as keyof FormDataState]}
               onChange={(e) => updateField(field as keyof FormDataState, e.target.value)}
-              className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-white/30 focus:border-[var(--gold)]/70"
+              className="rounded-2xl border border-slate-900/10 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-[var(--gold)]/70"
               placeholder={label}
             />
           )}
@@ -90,14 +90,14 @@ export function ContactForm() {
         <button
           type="submit"
           onClick={() => setSubmitMode("whatsapp")}
-          className="rounded-full bg-[var(--gold)] px-5 py-3 font-medium text-black transition hover:opacity-95"
+          className="rounded-full bg-[var(--gold)] px-5 py-3 font-medium text-white transition hover:opacity-95"
         >
           Submit via WhatsApp
         </button>
         <button
           type="submit"
           onClick={() => setSubmitMode("email")}
-          className="rounded-full border border-white/12 bg-white/5 px-5 py-3 font-medium text-white transition hover:border-[var(--gold)]/50"
+          className="rounded-full border border-slate-900/12 bg-white px-5 py-3 font-medium text-slate-800 transition hover:border-[var(--gold)]/50"
         >
           Submit via Email
         </button>

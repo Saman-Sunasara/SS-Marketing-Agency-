@@ -14,8 +14,8 @@ export default function ServicesPage() {
         <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
             <div key={service} className="glass rounded-3xl p-6">
-              <div className="text-xl font-medium text-white">{service}</div>
-              <p className="mt-3 text-sm leading-7 text-white/62">
+              <div className="text-xl font-medium text-slate-950">{service}</div>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
                 Crafted to improve traffic quality, reduce wasted spend and increase conversion efficiency.
               </p>
             </div>

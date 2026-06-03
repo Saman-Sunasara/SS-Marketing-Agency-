@@ -15,19 +15,19 @@ export default function ContactPage() {
               title="Let’s build your next growth engine."
               description="Tell us about your business, goals and marketing budget. We will respond with the best next step."
             />
-            <div className="mt-8 space-y-3 text-sm text-white/70">
+            <div className="mt-8 space-y-3 text-sm text-slate-600">
               <div>
-                <span className="text-white/45">Founder:</span> {siteConfig.founder}
+                <span className="text-slate-500">Founder:</span> {siteConfig.founder}
               </div>
               <div>
-                <span className="text-white/45">Email:</span>{" "}
-                <Link href={`mailto:${siteConfig.email}`} className="hover:text-white">
+                <span className="text-slate-500">Email:</span>{" "}
+                <Link href={`mailto:${siteConfig.email}`} className="hover:text-slate-950">
                   {siteConfig.email}
                 </Link>
               </div>
               <div>
-                <span className="text-white/45">WhatsApp:</span>{" "}
-                <Link href={`https://wa.me/${siteConfig.whatsapp}`} className="hover:text-white" target="_blank" rel="noreferrer">
+                <span className="text-slate-500">WhatsApp:</span>{" "}
+                <Link href={`https://wa.me/${siteConfig.whatsapp}`} className="hover:text-slate-950" target="_blank" rel="noreferrer">
                   {siteConfig.whatsappDisplay}
                 </Link>
               </div>

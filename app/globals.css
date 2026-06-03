@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --bg: #070707;
-  --panel: rgba(255, 255, 255, 0.04);
-  --panel-strong: rgba(255, 255, 255, 0.07);
-  --border: rgba(212, 175, 55, 0.22);
-  --text: #f5f1e8;
-  --muted: rgba(245, 241, 232, 0.74);
-  --gold: #d4af37;
-  --gold-soft: rgba(212, 175, 55, 0.14);
+  --bg: #f5efe4;
+  --panel: rgba(255, 255, 255, 0.72);
+  --panel-strong: rgba(255, 255, 255, 0.92);
+  --border: rgba(43, 54, 47, 0.12);
+  --text: #1f2a24;
+  --muted: rgba(31, 42, 36, 0.72);
+  --gold: #b88b2f;
+  --gold-soft: rgba(184, 139, 47, 0.12);
 }
 
 * {
@@ -25,9 +25,9 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(circle at top, rgba(212, 175, 55, 0.16), transparent 32%),
-    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.07), transparent 22%),
-    linear-gradient(180deg, #111111 0%, #070707 45%, #050505 100%);
+    radial-gradient(circle at top, rgba(184, 139, 47, 0.16), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(77, 91, 83, 0.12), transparent 24%),
+    linear-gradient(180deg, #fcfaf5 0%, #f6f0e5 55%, #efe6d6 100%);
   font-family: var(--font-body), system-ui, sans-serif;
 }
 
@@ -36,11 +36,11 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(31, 42, 36, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31, 42, 36, 0.04) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(circle at center, black, transparent 85%);
-  opacity: 0.16;
+  opacity: 0.12;
 }
 
 a {
@@ -49,8 +49,8 @@ a {
 }
 
 ::selection {
-  background: rgba(212, 175, 55, 0.34);
-  color: #fff;
+  background: rgba(184, 139, 47, 0.26);
+  color: #1f2a24;
 }
 
 .font-display {
@@ -58,14 +58,38 @@ a {
 }
 
 .glass {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.62));
   backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(43, 54, 47, 0.08);
 }
 
 .gold-border {
-  border: 1px solid rgba(212, 175, 55, 0.25);
-  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.06) inset;
+  border: 1px solid rgba(184, 139, 47, 0.25);
+  box-shadow: 0 0 0 1px rgba(184, 139, 47, 0.08) inset;
+}
+
+[class*="text-white"] {
+  color: var(--text) !important;
+}
+
+[class*="bg-black"] {
+  background-color: rgba(255, 255, 255, 0.88) !important;
+}
+
+[class*="border-white"] {
+  border-color: rgba(43, 54, 47, 0.12) !important;
+}
+
+[class*="shadow-black"] {
+  box-shadow: 0 24px 60px rgba(31, 42, 36, 0.1) !important;
+}
+
+[class*="text-white/"] {
+  color: rgba(31, 42, 36, 0.72) !important;
+}
+
+[class*="bg-white/"] {
+  background-color: rgba(255, 255, 255, 0.84) !important;
 }
 
 .container-shell {
